@@ -40,4 +40,22 @@ def get_group(self, position):
   return:
       返回一个tuples包含相邻的所有同颜色的子的位置
   """
+
+def get_groups_around(self, position):
+  """获取一个子周围连续的子的集合
+  args:
+    position -- 子的坐标
+  return:
+    返回一个数组
+  """
+def _on_board(self, position):
+  """判断一个子是否是在棋盘内
+  args:
+    position -- 子的坐标
+  returns:
+    返回一个boolen值
+  """
+def _create_neighbors_cache(self):
+  """创建临近的缓存
+  """
 ```

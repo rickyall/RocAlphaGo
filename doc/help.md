@@ -58,4 +58,107 @@ def _on_board(self, position):
 def _create_neighbors_cache(self):
   """创建临近的缓存
   """
+def _neighbors(self, position):
+  """返回一个子的临近位置
+  """
+def _diagonals(self, position):
+  """返回对角线的子的位置
+  """
+def _update_neighbors(self, position):
+  """当下一个子后，更新临近的子的临近子
+  """
+def _update_hash(self, action, color):
+  """更新棋盘状态
+  args:
+    action -- 下棋的位置
+    color -- 下棋的颜色
+  """
+def _remove_group(self, group):
+  """将一个被吃的棋子组从棋盘上移除，更新移除组的信息，和移除组临近的信息
+  """
+def copy(self):
+  """复制游戏的状态
+  """
+def is_suicide(self, action):
+  """判断落子是不是自杀型的
+  """
+def is_positional_superko(self, action):
+  """禁止同一起手走出和前面一样的盘面
+  """
+def is_legal(self, action):
+  """判断当前的走子是否是合法的，只判断劫
+  """
+def is_eyeish(self, position, owner):
+  """判断当前的子是不是眼
+  """
+def is_eye(self, position, owner, stack=[]):
+  """判断当前的位置是不是执手的真眼
+  """
+def is_ladder_capture(self, action, prey=None, remaining_attempts=80):
+  """
+  """
+def is_ladder_escape(self, action, prey=None, remaining_attempts=80):
+  """判断当前落子是不是逃脱了征子
+  """
+
+def get_legal_moves(self, include_eyes):
+  """获取合法的落子位置
+  """
+
+def get_winner(self):
+  """计算盘面的分数，返回谁获胜
+  """
+def place_handicaps(self, actions):
+  """添加劫的位置
+  """
+def get_current_player(self):
+  """获取当前的玩家
+  """
+def do_move(self, action, color=None):
+  """在（x, y）落一子
+  """
 ```
+
+# MCTS 蒙特卡洛树模拟算法
+位置：/AlphaGo/mcts.py
+
+## **TreeNode**
+此接口提供蒙特卡洛树搜索的算法
+
+1）初始输入参数
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1

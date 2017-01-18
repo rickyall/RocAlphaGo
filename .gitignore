@@ -10,3 +10,6 @@
 src/
 benchmarks/data/
 /.idea
+build/
+*.egg-info
+dist/

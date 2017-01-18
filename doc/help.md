@@ -119,6 +119,25 @@ def do_move(self, action, color=None):
   """
 ```
 
+# 棋盘特征预处理
+位置： /AlphaGo/preprocessing/preprocessing
+
+## 方法
+```python
+def get_board(state):
+  """特征1：将棋盘上的子划分为己方、对方、空的子，并返回一个三维的矩阵
+  """
+
+def get_turns_since(state, maximum=8):
+  """特征2：计算每个位置子的寿命，并获取一个三维的矩阵
+  """
+
+def get_liberties(state, maximum=8):
+  """特征3：计算每个位置子的气
+  """
+```
+
+
 # MCTS 蒙特卡洛树模拟算法
 位置：/AlphaGo/mcts.py
 

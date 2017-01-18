@@ -1,0 +1,57 @@
+{
+  "epochs": [
+    {
+      "acc": 0.0010416666666666667, 
+      "loss": 5.888897180557251, 
+      "val_acc": 0.0, 
+      "val_loss": 5.8888444900512695
+    }, 
+    {
+      "acc": 0.0041666666666666666, 
+      "loss": 5.8887364864349365, 
+      "val_acc": 0.0, 
+      "val_loss": 5.8886291186014814
+    }, 
+    {
+      "acc": 0.0010416666666666667, 
+      "loss": 5.8885961691538489, 
+      "val_acc": 0.0, 
+      "val_loss": 5.8885054588317871
+    }, 
+    {
+      "acc": 0.005208333333333333, 
+      "loss": 5.8884586016337073, 
+      "val_acc": 0.0, 
+      "val_loss": 5.8883806864420576
+    }, 
+    {
+      "acc": 0.0072916666666666668, 
+      "loss": 5.8882756233215332, 
+      "val_acc": 0.0, 
+      "val_loss": 5.8880016009012861
+    }
+  ], 
+  "cmd_line_args": [
+    {
+      "epoch_length": null, 
+      "train_val_test": [
+        0.93, 
+        0.05, 
+        0.02
+      ], 
+      "symmetries": "noop,rot90,rot180,rot270,fliplr,flipud,diag1,diag2", 
+      "verbose": false, 
+      "decay": 0.0001, 
+      "learning_rate": 0.01, 
+      "epochs": 5, 
+      "minibatch": 32, 
+      "weights": null, 
+      "out_directory": "training_results/", 
+      "model": "data/model/my_model.json", 
+      "train_data": "data/hdf5/debug_feature_planes.hdf5"
+    }
+  ], 
+  "best_epoch": 4, 
+  "training_data": "data/hdf5/debug_feature_planes.hdf5", 
+  "model_file": "data/model/my_model.json"
+}
